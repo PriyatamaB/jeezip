@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="test_sms" namespace="/user" extends="struts-default">
+	
+		<action name="newUser">	
+			<result>/sms_pages/registration.jsp</result>
+		</action>
+		
+		<action name="register" class="action.RegisterAction" method="registerUser">
+			<result name="input">/sms_pages/registration.jsp</result>
+			<result name="success">/sms_pages/reg_success.jsp</result>	
+		</action>
+		
+		<action name="question" class="action.UserAction" method="getQuestion">	
+			<result>/sms_pages/question.jsp</result>
+			<result name="error">/sms_pages/forgotPass.jsp</result>
+		</action>
+		
+		<action name="answer">	
+			<result>/sms_pages/answer.jsp</result>
+		</action>
+		
+		<action name="index">	
+			<result>/sms_pages/index.jsp</result>
+		</action>
+		
+		<action name="getmsg">	
+			<result>/sms_pages/getmessage.jsp</result>
+		</action>
+	</package>
+
+
+	<package name="basic" namespace="/test" extends="struts-default">
+	
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		
+		<action name="validate" class="action.UserAction" method="validateUser">	
+			<result name="success" type="tiles">main1</result>
+			<result name="error">/sms_pages/login_err.jsp</result>
+		</action>
+		
+		<action name="sendsms" class="action.SentSMSAction" method="sentSMS">
+			<result name="success" type="tiles">sendsms</result>
+		</action>
+		
+		<action name="send">
+			<result type="tiles">send</result>
+		</action>
+		
+		<action name="main">
+			<result name="success" type="tiles">main</result>
+		</action>
+		
+		<action name="groupSms">
+			<result type="tiles">groupSms</result>
+		</action>
+		
+		<action name="sent" class="action.SentSMSAction" method="sentSMSList">			
+			<result type="tiles">sent</result>
+		</action>
+						
+		<action name="addressBook" class="action.SaveContactAction" method="getContactList">
+			<result type="tiles">addressBook</result>
+		</action>
+		
+		<action name="draft" class="action.SaveSMSAction" method="draftSMSList">
+			<result type="tiles">draft</result>
+		</action>
+		
+		<action name="logout">			
+			<result>../tiles_pages/logout.jsp</result>
+		</action>
+		
+		<action name="savesms" class="action.SaveSMSAction" method="saveSMS">
+			<result type="tiles">savesms</result>
+		</action>
+		
+		<action name="save_contact" class="action.SaveContactAction" method="saveContact">
+			<result type="tiles">save_contact</result>
+			<result type="tiles" name="error">save_contact_error</result>
+		</action>		
+		
+		<action name="update">	
+			<result type="tiles">update</result>
+		</action>
+		
+		<action name="update_success" class="action.SaveContactAction" method="updateContact">	
+			<result type="tiles">update_success</result>
+		</action>
+		
+		<action name="delete" class="action.SaveContactAction" method="deleteContact">	
+			<result type="tiles">delete</result>
+		</action>
+		
+		<action name="change_password">	
+			<result type="tiles">change_pass</result>
+		</action>
+		<action name="changePassword_success" class="action.UserAction" method="changePassword">	
+			<result type="tiles">changePassword_success</result>
+		</action>
+	</package>
+</struts>

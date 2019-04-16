@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+<definition name="baseLayout" template="/tiles_pages/baseLayout.jsp">
+      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="header" value="/tiles_pages/header.jsp"/>
+      <put-attribute name="body"   value="/tiles_pages/body.jsp"/>
+      <put-attribute name="footer"   value="/tiles_pages/footer.jsp"/>
+  </definition>
+  
+  <definition name="main1" extends="baseLayout">
+      <put-attribute name="title"  value="main account"/>
+      <put-attribute name="body"   value="/tiles_pages/mainAccount.jsp"/>      
+  </definition>
+  
+  <definition name="main" extends="baseLayout">
+      <put-attribute name="title"  value="main account"/>
+      <put-attribute name="body"   value="/tiles_pages/mainAccount.jsp"/>      
+  </definition>
+  <definition name="send" extends="baseLayout">
+      <put-attribute name="title"  value="send sms"/>
+      <put-attribute name="body"   value="/tiles_pages/send.jsp"/>      
+  </definition>
+  
+   <definition name="groupSms" extends="baseLayout">
+      <put-attribute name="title"  value="Group sms"/>
+      <put-attribute name="body"   value="/tiles_pages/groupSMS.jsp"/>      
+  </definition>
+  
+  <definition name="sent" extends="baseLayout">
+      <put-attribute name="title"  value="sent sms"/>
+      <put-attribute name="body"   value="/tiles_pages/sent.jsp"/>      
+  </definition>
+  
+   <definition name="addressBook" extends="baseLayout">
+      <put-attribute name="title"  value="Address Book"/>
+      <put-attribute name="body"   value="/tiles_pages/addressBook.jsp"/>      
+  </definition>
+  
+  <definition name="addContact" extends="baseLayout">
+      <put-attribute name="title"  value="Add Contact"/>
+      <put-attribute name="body"   value="/tiles_pages/add_contact.jsp"/>      
+  </definition>
+  
+   <definition name="draft" extends="baseLayout">
+      <put-attribute name="title"  value="Saved SMS"/>
+      <put-attribute name="body"   value="/tiles_pages/draft.jsp"/>      
+  </definition> 
+  
+  <definition name="sendsms" extends="baseLayout">
+  		<put-attribute name="title"  value="Send SMS"/>
+      	<put-attribute name="body"   value="/sms_pages/send_success.jsp"/>
+  </definition>
+  
+  <definition name="savesms" extends="baseLayout">
+  		<put-attribute name="title"  value="Save SMS"/>
+      	<put-attribute name="body"   value="/sms_pages/save_success.jsp"/>
+  </definition>
+  
+  <definition name="save_contact" extends="baseLayout">
+  		<put-attribute name="title"  value="Save Contact"/>
+      	<put-attribute name="body"   value="/sms_pages/saveContact_success.jsp"/>
+  </definition>
+  
+  <definition name="save_contact_error" extends="baseLayout">
+  		<put-attribute name="title"  value="Save Contact Error"/>
+      	<put-attribute name="body"   value="/sms_pages/saveContact_error.jsp"/>
+  </definition>
+  
+  <definition name="update" extends="baseLayout">
+  		<put-attribute name="title"  value="Update Contact"/>
+      	<put-attribute name="body"   value="/tiles_pages/updateAddressBook.jsp"/>
+  </definition>
+  
+  <definition name="update_success" extends="baseLayout">
+  		<put-attribute name="title"  value="Update Selected Contact"/>
+      	<put-attribute name="body"   value="/sms_pages/updateContact_success.jsp"/>
+  </definition>
+  
+  <definition name="delete" extends="baseLayout">
+  		<put-attribute name="title"  value="Delete Contact"/>
+      	<put-attribute name="body"   value="/sms_pages/deleteContact_success.jsp"/>
+  </definition>
+ <definition name="change_pass" extends="baseLayout">
+  		<put-attribute name="title"  value="Change Password"/>
+      	<put-attribute name="body"   value="/sms_pages/changePassword.jsp"/>
+  </definition>
+  
+     <definition name="changePassword_success" extends="baseLayout">
+  		<put-attribute name="title"  value="Change Password"/>
+      	<put-attribute name="body"   value="/sms_pages/changePassword_success.jsp"/>
+  </definition>
+</tiles-definitions>

@@ -1,0 +1,50 @@
+-------for webservice-----
+1. Create Dynamic Project
+2. add webservice jar bundle in lib
+3. If required write pojo implements serializable
+4. Write interface with service methods annoted with @WebService
+	Each method should be annoted with @webMethod
+	Each parameter can be annoted with @WebParam(name="")
+5.Write ServiceImplementation class implements Service  Interface
+	should be annoted with 
+	@WebService(endpointInterface="fully qualified name of interface") 
+6. add sun-jaxws.xml in WEB-INF
+	<?xml version="1.0" encoding="UTF-8"?>
+	<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+	<endpoint implementation="com.myws.EmpServiceImpl" name="Emp" url-pattern="/emp"/>
+	</endpoints>
+match servlet name and url pattern in web.xml
+7. add listener and and WSservlet mapping  in web.xml ---in WEB-INF
+ <listener>
+       <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+   </listener>
+   <servlet>
+       <servlet-name>Emp</servlet-name>
+       <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+       <load-on-startup>1</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+       <servlet-name>Emp</servlet-name>
+       <url-pattern>/emp</url-pattern>
+   </servlet-mapping>
+
+----- for client-----
+1. create dynamic project
+2. copy webservice-rt.jar into lib folder
+3. Project->properties-->build-->new-->program should be in sequence first
+under main tab set
+       location -- ${env_var:JAVA_HOME}\bin\wsimport.exe (available under jdk home\bin)
+       Working Directory --${build_project}
+      arguments ---       -keep -s ./src -p ws -d ./build/classes http://localhost:8080/<service context>/<url>?wsdl
+e.g.-keep -s ./src -p ws -d ./build/classes http://localhost:8080/myws/emp?wsdl
+project-->build all
+4. Write jsp/servlet/action to involke service method
+	e.g
+		EmpServiceImplService ws = new EmpServiceImplService();
+		EmpService s = ws.getEmpServiceImplPort();
+		Employee e = s.search(1);
+		out.println(e.getEmpno() + " : " + e.getName());
+
+
+
+	

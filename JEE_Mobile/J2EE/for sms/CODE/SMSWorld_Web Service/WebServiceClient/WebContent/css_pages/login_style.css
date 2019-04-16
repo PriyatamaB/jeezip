@@ -1,0 +1,352 @@
+@CHARSET "ISO-8859-1";
+body,td,th {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333333;
+}
+h1,h2,h3,p {
+    margin:0;
+    padding:0;
+     font-weight:normal;
+    font-size:11px;
+}
+a{
+    outline:none;
+    text-decoration:none;
+    font-size: 12px;
+}
+body {
+    margin:0;
+    background-color: #f7f7f8;
+}
+#header {
+    height:116px;
+}
+ #header .tlinks {
+    background:rgb(4,132,172);
+    height:15px;
+    padding:6px;
+    color:white;
+    font-size:11px;
+}
+.flt{
+    float:left;
+}
+.frt{
+    float:right;
+}
+#header a{
+    color:#b5b7d7;
+     margin-right:5px;
+}
+#header a:hover{
+    color:#fff;
+}
+.logo {
+    background:rgb(190,216,220);
+    height:93px;
+    border-bottom:1px solid #dcdad8;
+}
+#header h1{
+    float:left;
+    width:130px;
+     height:54px;
+    text-indent:-999999px;
+    background:url(http://images.way2sms.com/w2sv4/images/way2sms-logo.png) no-repeat;
+    margin:11px 0 0 10px;
+}
+#container {
+    width:966px;
+    padding:9px;
+    background:rgb(4,132,172);
+     margin:10px auto 0 auto;
+    border:1px solid #c0c0c0;
+}
+.mm{
+width:984px;
+    margin:0px auto;
+}
+.login {
+    margin:10px 0 0 34px;
+    width:260px;
+}
+.login h3{
+    font-size:18px;
+     color:#2c318d;
+    margin:0px 0 14px 0;
+    padding-bottom:12px;
+    border-bottom:1px solid #cacbe2;
+}
+.login em{
+    font-style:normal;
+    color:black;
+}
+.login a{
+    color:#2c328e;
+ }
+.log p{
+    margin:0 0 10px 0 ;
+    color:black;
+}
+.forgo p{
+    margin-bottom:4px;
+}
+.log label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:3px;
+    font-size: 14px;
+}
+.log input{
+     border:1px solid;    
+    border-color:black;
+    padding:8px;
+    display:block;
+    font-size:11px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+     width:150px;
+}
+.but {
+    padding-top:20px;
+}
+.but a{
+    float:left;
+    padding:6px;
+    font-weight:bold;
+}
+.but input {
+    border:1px solid black;
+    color:white;
+     padding:6px 0;
+    margin:0px 0 0 0;
+    margin-top:3px;
+    background:#fbfbff;
+    font-weight:bold;
+    width:86px;
+    float:left;
+    background:teal;
+       cursor:pointer;
+}
+.clrb{
+    clear:both;
+}
+#login{
+    border:19px solid #b7c0de;
+    padding:12px;
+    background:light blue;
+    border-bottom:0;
+ }
+.reg {
+    width:210px;
+    height:200px;
+    background:#edf0fa;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    padding:20px 16px 16px 16px;
+    margin:7px;
+     text-align:center;    
+}
+.reg b{
+    color:black;
+    font-size:18px;
+    display:block;
+}
+.reg strong{
+    color:#2c318d;
+    font-size:18px;
+    display:block;
+    font-weight:normal;
+     margin:10px 0;
+}
+.reg span{
+    color:black;
+    font-size:11px;
+    display:block;
+    font-weight:bold;
+}
+.reg hr{
+    border:0;
+    background:#b7c0de;
+    height:3px;
+    margin:30px 0;
+ }
+.reg input{
+  	width:116px;
+  	background:purple;       
+            
+    border:1px white;
+    color:white;
+    
+    padding:6px 0;
+    margin:0px 0 0 0;
+    -moz-border-radius:4px;
+    border-radius:4px; 
+}
+.tt {
+    width:300px;
+    height:250px;
+    background:#ccc;
+}
+.ste-ad {
+    background:#ced4e9;
+    text-align:center;
+    height:90px;
+    border:19px solid #b7c0de;
+    border-top-width:8px;
+    *width:928px;
+    *margin:0 auto;
+}
+.contDiv h1{
+	color:#2c318d;
+    font-size:18px; font-weight:bold;
+    display:block; 
+    }
+.contDiv h2{ 
+	margin:0;
+	padding:0; 
+	font:bold 11px Tahoma, Helvetica, sans-serif; 
+	color:#666666; 
+	text-transform:none; 
+	background:#fff; 
+}
+ .contDiv{
+    border:1px solid #e7e7e7;
+    height:auto;
+    background:#fff;
+    padding:20px 30px;
+    border:18px solid #b7c0de; 
+    border-top:0;
+    }
+.contDiv .cleft{
+    border-right:2px solid #edf0fa;     
+    padding:20px 30px;
+    float:left;
+    } 
+.contDiv h4{
+	margin:0; 
+	padding:0 0 5px 15px;  
+	color:#666666; 
+	font:bold 14px "Myriad Pro", Tahoma, Verdana, Geneva, Helvetica, Arial, Sans-Serif;   line-height:25px; text-transform:uppercase; 
+	background:url(http://images.way2sms.com/images/index-sprite.png); 
+	background-position:-135px -100px;   
+	width:270px; 
+	height:20px; 
+	}
+  
+.ntext{
+	margin:0;
+	padding:0;
+	font:normal 11px Tahoma, Arial, Helvetica, sans-serif; 
+	color:#666666; 
+	line-height:18px;
+	background:#edf0fa; 
+	padding:10px 15px; 
+	margin:10px 0;
+	font-weight:bold;
+}
+.ntext1{
+	margin:0; 
+	padding:0;
+	font:normal 12px Tahoma, Arial, Helvetica, sans-serif; 
+	color:#666666; 
+	padding:0 0 20px 15px;
+	}
+ .greyBox{
+	 width:360px; 
+	 height:250px; 
+	 background:#f7f7f7; 
+	 background:#f5f7fc; 
+	 margin-top:10px; 
+	 padding:0; 
+	 text-align:left; 
+	 padding:20px 0 0 20px;
+ }
+.grad1{
+	background:#f4f4f4;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4');
+	background-image: -moz-linear-gradient(#ffffff, #f4f4f4);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f4f4f4));
+	background-image: -webkit-linear-gradient(#ffffff, #f4f4f4); 
+	background-image: -o-linear-gradient(#ffffff, #f4f4f4); 
+}
+h1,h2,h3,h4,h5 {
+    padding:0;
+    margin:0;
+   	list-style-type:none;
+}
+#footer p, #footer ul, #footer li {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+#footer {
+    margin-top:10px;
+    width:984px;
+    font-family:Tahoma, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:#2c3e0e;
+    border:1px solid #c0c0c0;
+     border-bottom:0;
+    background:#fff;
+margin: 10px auto 0 auto;
+padding-bottom:10px;
+}
+#footer a{
+    color:#005298;
+    text-decoration:none;
+    outline:none;
+}
+#footer li{
+    padding:5px;
+     border-bottom:1px solid #bfbfbf;
+    list-style-type:disc;
+}
+.footh{
+    border-bottom:1px solid #e3e3e3;
+    padding:24px 0 8px 0;
+    width:984px;
+}
+.footh .item, .footm .item1{
+    padding:0px 35px;
+     border-right:1px solid #e3e3e3;
+}
+.footm .item1{
+    padding:0 35px;
+    margin:22px 13px;
+}
+ 
+ 
+.item1 b{
+    font-weight:normal;
+}
+.item1 span{
+}
+.footh h5{
+    color:#4b4b4b;
+     font-size:24px;
+    letter-spacing:-0.04em;
+}
+.footh span{
+    font-size:18px;
+    color:#005298;
+}
+#footer .fbotlink {
+    padding:10px;
+    margin-top:10px;
+    text-align:center;
+    border-top:1px solid #e4e4e4;
+ }
+#footer .fbotlink a{
+    color:#000;
+    font-size:12px;
+    font-weight:bold;
+    margin:0 8px;
+}
+.copy {
+    color:#999999;
+    text-align:center;
+}
+ .footh .bdrn, .footm .bdrn {
+    border:0;
+}

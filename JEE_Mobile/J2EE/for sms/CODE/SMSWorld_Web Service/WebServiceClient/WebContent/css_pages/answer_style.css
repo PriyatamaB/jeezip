@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+.div
+{
+ 
+ 	height:40px;
+ 	text-align:center;
+ 	color:white;
+	width: 780px;
+	background:purple;
+/*	font-family:Cooper Black;*/
+font-family:  Script MT Bold;
+	font-size: 25px;
+	
+	    
+
+}

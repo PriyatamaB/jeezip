@@ -1,0 +1,33 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+       "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<message key="name.required" />
+		</field-validator>
+	</field>
+	
+	<field name="mbno">
+		<field-validator type="requiredstring">
+			<message key="mbno.required" />
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">12</param>
+			<param name="minLength">10</param>
+			<message key="mbno.incorrect.length"></message>
+		</field-validator>
+	</field>
+	
+	<field name="bdate">
+		<field-validator type="date">
+			<message key="bdate.required" />
+		</field-validator>
+	</field>
+	
+	<field name="ans">
+		<field-validator type="requiredstring">
+			<message key="ans.required" />
+		</field-validator>
+	</field>
+	
+</validators>

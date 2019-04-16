@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+h3
+{
+font-family: Monotype Corsiva;
+color: black;
+font-weight: bold;
+font-size: 35px;
+}
+div
+{
+font-family: sans-serif;
+color: black;
+font-size: 20px;
+}
+label
+{
+font-family:fantasy;
+font-size: 18px;
+font-style: italic;
+font-weight: bold;
+}
